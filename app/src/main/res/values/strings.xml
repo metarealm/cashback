@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">CreditCardCashBack</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+    <string-array name="store_category">
+        <item>Department Stores</item>
+        <item>Clothing Stores</item>
+        <item>Home Improvement Stores</item>
+        <item>Restaurants</item>
+        <item>Gas</item>
+        <item>Hotels</item>
+        <item>Travel</item>
+        <item>Grocery</item>
+    </string-array>
+
+
+</resources>
