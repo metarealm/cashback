@@ -1,4 +1,4 @@
-package dasltd.com.creditcardcashback;
+package dasltd.com.creditcardcashback.target;
 
 /**
  * Created by bhabani on 1/3/2016.
@@ -10,16 +10,15 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
-
 import java.util.ArrayList;
-
-import dasltd.com.creditcardcashback.datamanager.DataObject;
+import dasltd.com.creditcardcashback.R;
+import dasltd.com.creditcardcashback.datamanager.TargetObject;
 
 public class MyRecyclerViewAdapter extends RecyclerView
         .Adapter<MyRecyclerViewAdapter
         .DataObjectHolder> {
     private static String LOG_TAG = "MyRecyclerViewAdapter";
-    private ArrayList<DataObject> mDataset;
+    private ArrayList<TargetObject> mDataset;
     private static MyClickListener myClickListener;
 
     public static class DataObjectHolder extends RecyclerView.ViewHolder
@@ -46,7 +45,7 @@ public class MyRecyclerViewAdapter extends RecyclerView
         this.myClickListener = myClickListener;
     }
 
-    public MyRecyclerViewAdapter(ArrayList<DataObject> myDataset) {
+    public MyRecyclerViewAdapter(ArrayList<TargetObject> myDataset) {
         mDataset = myDataset;
     }
 
@@ -66,7 +65,7 @@ public class MyRecyclerViewAdapter extends RecyclerView
         holder.dateTime.setText(mDataset.get(position).getmText2());
     }
 
-    public void addItem(DataObject dataObj, int index) {
+    public void addItem(TargetObject dataObj, int index) {
         mDataset.add(dataObj);
         notifyItemInserted(index);
     }

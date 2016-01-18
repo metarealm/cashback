@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/CreditCardCashBack.iml" filepath="$PROJECT_DIR$/CreditCardCashBack.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cashback.iml" filepath="$PROJECT_DIR$/cashback.iml" />
     </modules>
   </component>
 </project>
-

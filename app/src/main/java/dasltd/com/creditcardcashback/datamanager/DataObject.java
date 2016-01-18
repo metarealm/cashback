@@ -1,30 +1,26 @@
 package dasltd.com.creditcardcashback.datamanager;
 
+import java.util.ArrayList;
+
 /**
  * Created by bhabani on 1/3/2016.
  */
 public class DataObject {
-    private String mText1;
-    private String mText2;
 
-    public DataObject (String text1, String text2){
-        mText1 = text1;
-        mText2 = text2;
+    private static ArrayList<TargetObject> targets = new ArrayList<TargetObject>();
+
+    public DataObject (){
+
     }
 
-    public String getmText1() {
-        return mText1;
+    public void addTargetObject(TargetObject obj){
+        targets.add(obj);
     }
 
-    public void setmText1(String mText1) {
-        this.mText1 = mText1;
+    public static ArrayList<TargetObject> getAllTargets(){
+        return targets;
     }
-
-    public String getmText2() {
-        return mText2;
-    }
-
-    public void setmText2(String mText2) {
-        this.mText2 = mText2;
+    public TargetObject get(int i) {
+        return targets.get(i - 1);
     }
 }

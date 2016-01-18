@@ -1,23 +1,62 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="dasltd.com.creditcardcashback" >
+    package="dasltd.com.creditcardcashback">
+
+    <!-- To auto-complete the email text field in the login form with the user's emails -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
 
     <application
         android:name=".CashBackApplication"
         android:allowBackup="true"
         android:icon="@drawable/cashback"
-        android:label="@string/app_name"
-        android:theme="@style/AppTheme" >
+        android:label="@string/title_activity_target"
+        android:theme="@style/AppTheme">
         <activity
-            android:name=".RecyclerViewActivity"
-            android:label="@string/app_name" >
+            android:name=".target.RecyclerViewActivity"
+            android:label="@string/title_activity_target">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
-</application>
+        <activity
+            android:name=".TransitionSecondActivity"
+            android:label="@string/title_activity_transition_second" />
+        <activity
+            android:name=".habit.HabitActivity"
+            android:label="@string/title_activity_habit"
+            android:parentActivityName=".target.RecyclerViewActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".target.RecyclerViewActivity" />
+        </activity>
+        <activity
+            android:name=".action.ActionActivity"
+            android:label="@string/title_activity_action"
+            android:parentActivityName=".habit.HabitActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="dasltd.com.creditcardcashback.habit.HabitActivity" />
+        </activity>
+        <activity
+            android:name=".LoginActivity"
+            android:label="@string/title_activity_login"
+            android:parentActivityName=".target.RecyclerViewActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="dasltd.com.creditcardcashback.target.RecyclerViewActivity" />
+        </activity>
+        <activity
+            android:name=".SignInActivity"
+            android:label="@string/title_activity_sign_in"
+            android:parentActivityName=".target.RecyclerViewActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="dasltd.com.creditcardcashback.target.RecyclerViewActivity" />
+        </activity>
+    </application>
 
 </manifest>

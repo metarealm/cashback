@@ -1,0 +1,51 @@
+{
+  "project_info": {
+    "project_id": "goalmanager-a35ea",
+    "project_number": "166782079873",
+    "name": "GoalManager"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:166782079873:android:74c840eaf51bf85d",
+        "client_id": "android:dasltd.com.creditcardcashback",
+        "client_type": 1,
+        "android_client_info": {
+          "package_name": "dasltd.com.creditcardcashback"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "166782079873-ce08j88pj3aar7os7vqu06b62slcmjgj.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "dasltd.com.creditcardcashback",
+            "certificate_hash": "99CECEDEED2D6F8FFCA40499E9954906232E388B"
+          }
+        }
+      ],
+      "api_key": [],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "cloud_messaging_service": {
+          "status": 1,
+          "apns_config": []
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "google_signin_service": {
+          "status": 2
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "client_info": [],
+  "ARTIFACT_VERSION": "1"
+}

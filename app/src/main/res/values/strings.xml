@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="app_name">CreditCardCashBack</string>
+    <string name="app_name">GoalManager</string>
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
 
@@ -15,6 +15,31 @@
         <item>Travel</item>
         <item>Grocery</item>
     </string-array>
+    <string name="title_activity_transition_second">TransitionSecondActivity</string>
+    <string name="title_activity_habit">Habit Manager</string>
+    <string name="title_activity_target">Target Manager</string>
+    <string name="title_activity_action">ActionActivity</string>
 
+    <string name="signed_out">Signed out</string>
+    <string name="disconnect">Disconnect</string>
+    <string name="sign_out">Sign Out</string>
+    <string name="title_activity_sign_in">SignInActivity</string>
+    <string name="desc_google_icon">Google Logo</string>
+    <string name="signed_in_fmt">Signed in as: %s</string>
+    <string name="loading">Loading…</string>
+
+    <!-- Strings related to login >
+        <string name="title_activity_login">Sign in</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password (optional)</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string-->
 
 </resources>
