@@ -8,19 +8,24 @@
     <uses-permission android:name="android.permission.READ_CONTACTS" />
 
     <application
-        android:name=".CashBackApplication"
         android:allowBackup="true"
         android:icon="@drawable/cashback"
         android:label="@string/title_activity_target"
+        android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity
+            android:name=".SelfHelpActivity"
+            android:label="@string/title_activity_self_help"
+            android:theme="@style/AppTheme.NoActionBar">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
         <activity
             android:name=".target.RecyclerViewActivity"
             android:label="@string/title_activity_target">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
         <activity
             android:name=".TransitionSecondActivity"
@@ -57,6 +62,7 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="dasltd.com.creditcardcashback.target.RecyclerViewActivity" />
         </activity>
+
     </application>
 
 </manifest>

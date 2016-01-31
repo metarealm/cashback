@@ -27,6 +27,16 @@
     <string name="desc_google_icon">Google Logo</string>
     <string name="signed_in_fmt">Signed in as: %s</string>
     <string name="loading">Loading…</string>
+    <string name="title_activity_self_help">SelfHelpActivity</string>
+
+    <string name="title_section1">Section 1</string>
+    <string name="title_section2">Section 2</string>
+    <string name="title_section3">Section 3</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_example">Example action</string>
 
     <!-- Strings related to login >
         <string name="title_activity_login">Sign in</string>
